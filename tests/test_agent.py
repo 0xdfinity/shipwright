@@ -39,6 +39,20 @@ class ScriptedClient:
 def project(tmp_path):
     dest = tmp_path / "proj"
     shutil.copytree(DEMO, dest)
+    # Keep sandbox failure tests meaningful even if the demo source is repaired.
+    (dest / "shop.py").write_text(
+        """def slugify(title):
+    return title
+
+def apply_discount(price_cents, percent):
+    return price_cents * (100 + percent) // 100
+
+def median(values):
+    values = sorted(values)
+    return values[len(values) // 2]
+""",
+        encoding="utf-8",
+    )
     return dest
 
 
