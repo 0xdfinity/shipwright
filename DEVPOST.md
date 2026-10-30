@@ -35,6 +35,6 @@ Multi-repo support, a web UI, and the Nebius Serverless Jobs deployment for long
 Python, OpenAI Python SDK (Apache 2.0), pytest (MIT), NVIDIA Nemotron 3 Super, Nebius Token Factory.
 
 ## Links
-- Public repository (MIT): [paste your GitHub or GitLab URL]
+- Public repository (MIT): https://github.com/0xdfinity/shipwright
 - Demo video (YouTube, under 3 min): [paste your YouTube URL]
 - Working demo: run locally with the README steps, or host on Nebius Serverless (see README).
